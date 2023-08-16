@@ -1,10 +1,11 @@
 import { exercicio1 } from "./Ex01";
+import { exercicio1a } from "./Ex01a";
 
 const prompt = require("prompt-sync")();
 
 let exercicio: string;
 
-function iniciarPrograma() {
+function iniciarPrograma() {2
     console.log();
     console.log("=================================================");
     console.log("Bem vindo a lista de exercícios de laços de repetição!");
@@ -22,7 +23,7 @@ function iniciarPrograma() {
             exercicio1();
             break;
         case "1a":
-
+            exercicio1a();
             break;
         case "2":
 
