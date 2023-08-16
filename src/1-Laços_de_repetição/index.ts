@@ -1,6 +1,8 @@
+import { exercicio1 } from "./Ex01";
+
 const prompt = require("prompt-sync")();
 
-let exercicio: String;
+let exercicio: string;
 
 function iniciarPrograma() {
     console.log();
@@ -13,7 +15,7 @@ function iniciarPrograma() {
     console.log("3 - Calcule o produto dos números de 1 a 5 utilizando um loop do...while");
     console.log("4 - Crie um loop que imprima a sequência de Fibonacci até o 10º termo");
     console.log("5 - Imprima os múltiplos de 3 de 0 a 30 utilizando um loop for");
-    return prompt("Digite o número: ");
+    exercicio = prompt("Digite o número: ");
 
     switch (exercicio) {
         case "1":
@@ -41,10 +43,10 @@ function iniciarPrograma() {
 
 }
 
-function exercicio1() {
-    console.log("Funcionou!")
-}
 
+
+
+iniciarPrograma();
 
 /*
 function soma() {
