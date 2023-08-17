@@ -1,12 +1,14 @@
 import { exercicio1 } from "./Ex01";
 import { exercicio2 } from "./Ex02";
 import { exercicio3 } from "./Ex03";
+import { exercicio4 } from "./Ex04";
+import { reiniciarPrograma } from "./reiniciarPrograma";
 
-const prompt = require("prompt-sync")();
+export const prompt = require("prompt-sync")();
 
 let exercicio: string;
 
-function iniciarPrograma() {
+export function iniciarPrograma() {
     console.log();
     console.log("=================================================");
     console.log("Bem vindo a lista de exercícios de laços de repetição!");
@@ -22,15 +24,19 @@ function iniciarPrograma() {
     switch (exercicio) {
         case "1":
             exercicio1();
+            reiniciarPrograma();
             break;
         case "2":
             exercicio2();
+            reiniciarPrograma();
             break;
         case "3":
             exercicio3();
+            reiniciarPrograma();
             break;
         case "4":
-
+            exercicio4();
+            reiniciarPrograma();
             break;
         case "5":
 
@@ -40,11 +46,13 @@ function iniciarPrograma() {
             break;
 
         default:
+            console.log("Entrada incorreta!");
+            console.log("Reiniciando o programa...");
+            iniciarPrograma();
             break;
     }
 
 }
-
 
 
 

@@ -8,4 +8,5 @@ export let exercicio1 = function exercicio1() {
     };
 };
 
+
 // OK
