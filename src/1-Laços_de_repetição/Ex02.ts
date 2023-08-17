@@ -9,3 +9,5 @@ export let exercicio2 = function exercicio2() {
         console.log(soma);
     };
 };
+
+// OK

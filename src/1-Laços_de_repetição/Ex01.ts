@@ -7,3 +7,5 @@ export let exercicio1 = function exercicio1() {
         console.log(i);
     };
 };
+
+// OK
