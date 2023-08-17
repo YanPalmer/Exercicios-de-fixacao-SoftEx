@@ -3,6 +3,7 @@ import { exercicio2 } from "./Ex02";
 import { exercicio3 } from "./Ex03";
 import { exercicio4 } from "./Ex04";
 import { exercicio5 } from "./Ex05";
+import { exercicio6 } from "./Ex06";
 import { reiniciarPrograma } from "./reiniciarPrograma";
 
 export const prompt = require("prompt-sync")();
@@ -45,7 +46,8 @@ export function iniciarPrograma() {
             reiniciarPrograma();
             break;
         case "6":
-
+            exercicio6();
+            reiniciarPrograma();
             break;
 
         default:
