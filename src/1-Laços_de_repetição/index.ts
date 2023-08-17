@@ -2,6 +2,7 @@ import { exercicio1 } from "./Ex01";
 import { exercicio2 } from "./Ex02";
 import { exercicio3 } from "./Ex03";
 import { exercicio4 } from "./Ex04";
+import { exercicio5 } from "./Ex05";
 import { reiniciarPrograma } from "./reiniciarPrograma";
 
 export const prompt = require("prompt-sync")();
@@ -20,6 +21,7 @@ export function iniciarPrograma() {
     console.log("5 - Crie um loop que imprima a sequência de Fibonacci até o 10º termo");
     console.log("6 - Imprima os múltiplos de 3 de 0 a 30 utilizando um loop for");
     exercicio = prompt("Digite o número: ");
+    console.log();
 
     switch (exercicio) {
         case "1":
@@ -39,7 +41,8 @@ export function iniciarPrograma() {
             reiniciarPrograma();
             break;
         case "5":
-
+            exercicio5();
+            reiniciarPrograma();
             break;
         case "6":
 

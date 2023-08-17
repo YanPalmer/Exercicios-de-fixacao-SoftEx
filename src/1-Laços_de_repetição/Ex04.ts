@@ -1,6 +1,8 @@
 // Calcule o produto dos números de 1 a 5 utilizando um loop do...while
 
 export let exercicio4 = function exercicio4() {
+    console.log("Programa que calcula o produto dos números de 1 a 5 utilizando um loop do...while...");
+
     // 1 * 2 = 2
     // 2 * 3 = 6
     // 6 * 4 = 24
