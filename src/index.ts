@@ -4,6 +4,7 @@ import { prompt } from "./1-Laços_de_repetição/gerenciador1";
 let assunto: string;
 
 export function iniciarProgramaGeral() {
+    console.log();
     console.log("=================================================");
     console.log("Bem vindo a lista de exercícios de \"Yan Palmer\"!");
     console.log("Escolha o ASSUNTO: ");

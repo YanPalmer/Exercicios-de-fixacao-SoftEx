@@ -8,6 +8,7 @@ export let reiniciarPrograma = function reiniciarPrograma() {
     console.log("1 - Sim");
     console.log("2 - Não");
     escolhaDeReinicio = Number(prompt("Digite sua escolha: "));
+    console.log();
     
     switch (escolhaDeReinicio) {
         case 1:
