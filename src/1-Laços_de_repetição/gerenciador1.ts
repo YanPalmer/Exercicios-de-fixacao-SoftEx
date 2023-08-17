@@ -1,4 +1,4 @@
-import { iniciarProgramaGeral } from "..";
+import { iniciarProgramaGeral, prompt } from "..";
 import { exercicio1 } from "./Ex01";
 import { exercicio2 } from "./Ex02";
 import { exercicio3 } from "./Ex03";
@@ -7,11 +7,9 @@ import { exercicio5 } from "./Ex05";
 import { exercicio6 } from "./Ex06";
 import { reiniciarPrograma } from "./reiniciarPrograma";
 
-export const prompt = require("prompt-sync")();
-
 let exercicio: string;
 
-export function iniciarPrograma() {
+export function iniciarGerenciador1() {
     console.log("=================================================");
     console.log("Bem vindo a lista de exercícios de laços de repetição!");
     console.log("Escolha qual exercício será executado: ");
@@ -53,11 +51,10 @@ export function iniciarPrograma() {
         case "0":
             iniciarProgramaGeral();
             break;
-
         default:
             console.log("Entrada incorreta!");
             console.log("Reiniciando o programa...");
-            iniciarPrograma();
+            iniciarGerenciador1();
             break;
     }
 

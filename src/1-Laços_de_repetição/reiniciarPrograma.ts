@@ -1,5 +1,5 @@
-import { iniciarPrograma } from "./gerenciador1";
-import { prompt } from "./gerenciador1";
+import { prompt } from "..";
+import { iniciarGerenciador1 } from "./gerenciador1";
 
 export let reiniciarPrograma = function reiniciarPrograma() {
     let escolhaDeReinicio: number;
@@ -12,12 +12,14 @@ export let reiniciarPrograma = function reiniciarPrograma() {
     
     switch (escolhaDeReinicio) {
         case 1:
-            iniciarPrograma();
+            iniciarGerenciador1();
             break;
         case 2:
             console.log("Fím do código...");
             break;
         default:
+            console.log("Valor não identificado. Tente novamente...");
+            reiniciarPrograma();
             break;
     }
 }

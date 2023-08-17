@@ -1,6 +1,6 @@
-import { iniciarPrograma } from "./1-Laços_de_repetição/gerenciador1";
-import { prompt } from "./1-Laços_de_repetição/gerenciador1";
+import { iniciarGerenciador1 } from "./1-Laços_de_repetição/gerenciador1";
 
+export const prompt = require("prompt-sync")();
 let assunto: string;
 
 export function iniciarProgramaGeral() {
@@ -15,7 +15,7 @@ export function iniciarProgramaGeral() {
 
     switch (assunto) {
         case "1":
-            iniciarPrograma();
+            iniciarGerenciador1();
             break;
         case "2":
             // exercicio2();
