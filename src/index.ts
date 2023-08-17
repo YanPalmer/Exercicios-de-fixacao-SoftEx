@@ -1,4 +1,5 @@
 import { iniciarGerenciador1 } from "./1-Laços_de_repetição/gerenciador1";
+import { iniciarGerenciador2 } from "./2-Estruturas_de_controle_condicionais/gerenciador2";
 
 export const prompt = require("prompt-sync")();
 let assunto: string;
@@ -18,7 +19,7 @@ export function iniciarProgramaGeral() {
             iniciarGerenciador1();
             break;
         case "2":
-            // exercicio2();
+            iniciarGerenciador2();
             // reiniciarPrograma();
             break;
         case "3":

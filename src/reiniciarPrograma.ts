@@ -1,7 +1,8 @@
 import { prompt } from ".";
 import { iniciarGerenciador1 } from "./1-Laços_de_repetição/gerenciador1";
+import { iniciarGerenciador2 } from "./2-Estruturas_de_controle_condicionais/gerenciador2";
 
-export let reiniciarPrograma = function reiniciarPrograma() {
+export function reiniciarPrograma(gerenciador: number) {
     let escolhaDeReinicio: number;
     console.log();
     console.log("Gostaria de reiniciar?");
@@ -12,14 +13,18 @@ export let reiniciarPrograma = function reiniciarPrograma() {
     
     switch (escolhaDeReinicio) {
         case 1:
-            iniciarGerenciador1();
+            if (gerenciador == 1) {
+                iniciarGerenciador1();
+            } else if (gerenciador == 2) {
+                iniciarGerenciador2();
+            }
             break;
         case 2:
             console.log("Fím do código...");
             break;
         default:
             console.log("Valor não identificado. Tente novamente...");
-            reiniciarPrograma();
+            reiniciarPrograma(gerenciador);
             break;
     }
 }

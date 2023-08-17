@@ -26,27 +26,27 @@ export function iniciarGerenciador1() {
     switch (exercicio) {
         case "1":
             exercicio1();
-            reiniciarPrograma();
+            reiniciarPrograma(1);
             break;
         case "2":
             exercicio2();
-            reiniciarPrograma();
+            reiniciarPrograma(1);
             break;
         case "3":
             exercicio3();
-            reiniciarPrograma();
+            reiniciarPrograma(1);
             break;
         case "4":
             exercicio4();
-            reiniciarPrograma();
+            reiniciarPrograma(1);
             break;
         case "5":
             exercicio5();
-            reiniciarPrograma();
+            reiniciarPrograma(1);
             break;
         case "6":
             exercicio6();
-            reiniciarPrograma();
+            reiniciarPrograma(1);
             break;
         case "0":
             iniciarProgramaGeral();
