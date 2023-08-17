@@ -1,5 +1,5 @@
-import { prompt } from "..";
-import { iniciarGerenciador1 } from "./gerenciador1";
+import { prompt } from ".";
+import { iniciarGerenciador1 } from "./1-Laços_de_repetição/gerenciador1";
 
 export let reiniciarPrograma = function reiniciarPrograma() {
     let escolhaDeReinicio: number;

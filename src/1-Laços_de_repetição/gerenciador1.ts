@@ -5,7 +5,7 @@ import { exercicio3 } from "./Ex03";
 import { exercicio4 } from "./Ex04";
 import { exercicio5 } from "./Ex05";
 import { exercicio6 } from "./Ex06";
-import { reiniciarPrograma } from "./reiniciarPrograma";
+import { reiniciarPrograma } from "../reiniciarPrograma";
 
 let exercicio: string;
 
