@@ -1,5 +1,5 @@
 import { exercicio1 } from "./Ex01";
-import { exercicio1a } from "./Ex01a";
+import { exercicio2 } from "./Ex02";
 
 const prompt = require("prompt-sync")();
 
@@ -11,7 +11,7 @@ function iniciarPrograma() {2
     console.log("Bem vindo a lista de exercícios de laços de repetição!");
     console.log("Escolha qual exercício será executado: ");
     console.log("1 - Imprima os números de 1 a 10 utilizando um loop for");
-    console.log("1a - Calcule a soma dos números de 1 a 100 utilizando um loop while");
+    console.log("2 - Calcule a soma dos números de 1 a 100 utilizando um loop while");
     console.log("2 - Imprima os números pares de 0 a 20 utilizando um loop for");
     console.log("3 - Calcule o produto dos números de 1 a 5 utilizando um loop do...while");
     console.log("4 - Crie um loop que imprima a sequência de Fibonacci até o 10º termo");
@@ -22,8 +22,8 @@ function iniciarPrograma() {2
         case "1":
             exercicio1();
             break;
-        case "1a":
-            exercicio1a();
+        case "2":
+            exercicio2();
             break;
         case "2":
 
