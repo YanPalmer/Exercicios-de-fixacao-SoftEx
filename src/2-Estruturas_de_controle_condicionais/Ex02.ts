@@ -16,3 +16,5 @@ export function exercicio2() {
         exercicio2();
     }
 }
+
+// OK
