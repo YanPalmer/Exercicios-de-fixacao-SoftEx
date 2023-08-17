@@ -1,5 +1,5 @@
-import { iniciarPrograma } from ".";
-import { prompt } from "./index";
+import { iniciarPrograma } from "./gerenciador1";
+import { prompt } from "./gerenciador1";
 
 export let reiniciarPrograma = function reiniciarPrograma() {
     let escolhaDeReinicio: number;
