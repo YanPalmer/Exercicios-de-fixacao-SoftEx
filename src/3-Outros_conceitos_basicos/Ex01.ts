@@ -12,10 +12,13 @@ export function exercicio1() {
     // 2 * 3 = 6
     // 6 * 4 = 24
     // 24 * 5 = 120
-    for (let i = 2; i <= numero; i++) {
-        somaFatorial = somaFatorial * i;
-        console.log(somaFatorial);
+    function fatorial() {
+        for (let i = 2; i <= numero; i++) {
+            somaFatorial = somaFatorial * i;
+        }
+        console.log(`O fatorial de ${numero} é ${somaFatorial}`);
     }
+    fatorial();
 }
 
 // OK
