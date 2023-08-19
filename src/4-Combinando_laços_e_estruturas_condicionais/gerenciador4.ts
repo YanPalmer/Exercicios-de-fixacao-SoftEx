@@ -2,6 +2,7 @@ import { iniciarProgramaGeral, prompt } from "..";
 import { reiniciarPrograma } from "../reiniciarPrograma";
 import { exercicio1 } from "./Ex01";
 import { exercicio2 } from "./Ex02";
+import { exercicio3 } from "./Ex03";
 
 let exercicio: string;
 
@@ -27,7 +28,7 @@ export function iniciarGerenciador4() {
             reiniciarPrograma(4);
             break;
         case "3":
-            // exercicio3();
+            exercicio3();
             reiniciarPrograma(4);
             break;
         case "4":
