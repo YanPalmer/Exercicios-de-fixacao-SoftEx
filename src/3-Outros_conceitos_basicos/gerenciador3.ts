@@ -4,6 +4,7 @@ import { exercicio1 } from "./Ex01";
 import { exercicio2 } from "./Ex02";
 import { exercicio3 } from "./Ex03";
 import { exercicio4 } from "./Ex04";
+import { exercicio5 } from "./Ex05";
 
 let exercicio: string;
 
@@ -39,7 +40,7 @@ export function iniciarGerenciador3() {
             reiniciarPrograma(3);
             break;
         case "5":
-            // exercicio5();
+            exercicio5();
             reiniciarPrograma(3);
             break;
         case "6":
