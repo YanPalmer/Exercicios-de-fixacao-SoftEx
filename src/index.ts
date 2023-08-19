@@ -1,6 +1,7 @@
 import { iniciarGerenciador1 } from "./1-Laços_de_repetição/gerenciador1";
 import { iniciarGerenciador2 } from "./2-Estruturas_de_controle_condicionais/gerenciador2";
 import { iniciarGerenciador3 } from "./3-Outros_conceitos_basicos/gerenciador3";
+import { iniciarGerenciador4 } from "./4-Combinando_laços_e_estruturas_condicionais/gerenciador4";
 
 export const prompt = require("prompt-sync")();
 let assunto: string;
@@ -13,6 +14,7 @@ export function iniciarProgramaGeral() {
     console.log("1 - Laços_de_repetição");
     console.log("2 - Estruturas_de_controle_condicionais");
     console.log("3 - Outros_conceitos_basicos");
+    console.log("4 - Combinando_laços_e_estruturas_condicionais");
     assunto = prompt("Digite o número: ");
     console.log();
 
@@ -27,8 +29,7 @@ export function iniciarProgramaGeral() {
             iniciarGerenciador3();
             break;
         case "4":
-            // exercicio4();
-            // reiniciarPrograma();
+            iniciarGerenciador4();
             break;
         case "5":
             // exercicio5();
@@ -42,7 +43,7 @@ export function iniciarProgramaGeral() {
         default:
             console.log("Entrada incorreta!");
             console.log("Reiniciando o programa...");
-            // iniciarPrograma();
+            iniciarProgramaGeral();
             break;
     }
 }

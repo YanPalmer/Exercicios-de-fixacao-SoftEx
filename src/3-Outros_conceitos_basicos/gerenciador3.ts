@@ -11,7 +11,7 @@ let exercicio: string;
 
 export function iniciarGerenciador3() {
     console.log("=================================================");
-    console.log("Bem vindo a lista de exercícios de outros conceitos basicos!");
+    console.log("Bem vindo a lista de exercícios de outros conceitos básicos!");
     console.log("Escolha qual exercício será executado: ");
     console.log("1 - Crie uma função que calcule o fatorial de um número inteiro");
     console.log("2 - Crie uma função que retorne o maior valor entre três números");
