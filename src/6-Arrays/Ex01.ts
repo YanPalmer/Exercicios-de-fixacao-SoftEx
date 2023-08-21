@@ -15,12 +15,16 @@ export function exercicio1() {
             arrayDeNum.push(entrada);
         }
         return arrayDeNum;
-        return quantidadeDeNumeros;d
+        return quantidadeDeNumeros;
     }
 
+    // Ex: 2, 3, 1, 5
     function ordenarNumeros(arrayDeNum: number[], quantidadeDeNumeros: number) {
-        while () {
-            
+        let menorValor: number = 0;
+        for (const numero of arrayDeNum) {
+            if (numero < menorValor) {
+                menorValor = numero;
+            }
         }
     }
 
