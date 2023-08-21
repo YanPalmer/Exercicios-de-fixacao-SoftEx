@@ -4,6 +4,7 @@ import { iniciarGerenciador2 } from "./2-Estruturas_de_controle_condicionais/ger
 import { iniciarGerenciador3 } from "./3-Outros_conceitos_basicos/gerenciador3";
 import { iniciarGerenciador4 } from "./4-Combinando_laços_e_estruturas_condicionais/gerenciador4";
 import { iniciarGerenciador5 } from "./5-Trabalhando_com_strings/gerenciador5";
+import { iniciarGerenciador6 } from "./6-Arrays/gerenciador6";
 
 export function reiniciarPrograma(gerenciador: number) {
     let escolhaDeReinicio: number;
@@ -26,6 +27,8 @@ export function reiniciarPrograma(gerenciador: number) {
                 iniciarGerenciador4();
             } else if (gerenciador == 5) {
                 iniciarGerenciador5();
+            } else if (gerenciador == 6) {
+                iniciarGerenciador6();
             }
             break;
         case 2:
