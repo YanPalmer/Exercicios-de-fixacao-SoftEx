@@ -8,26 +8,25 @@ export function exercicio1() {
     function inserirArrayDeNumeros() {
         const arrayDeNum: number[] = [];
         const quantidadeDeNumeros: number = prompt("Digite quantos números você deseja inserir: ");
-        let entrada: number;
 
         for (let i = 0; i < quantidadeDeNumeros; i++) {
-            entrada = prompt(`Digite a ${i + 1}º entrada:`);
+            const entrada = parseInt(prompt(`Digite a ${i + 1}º entrada: `));
             arrayDeNum.push(entrada);
         }
         return arrayDeNum;
-        return quantidadeDeNumeros;
     }
+    // Array atual
+    let arrayDeNum: number[] = inserirArrayDeNumeros();
 
     // Ex: 2, 3, 1, 5
-    function ordenarNumeros(arrayDeNum: number[], quantidadeDeNumeros: number) {
-        let menorValor: number = 0;
-        for (const numero of arrayDeNum) {
-            if (numero < menorValor) {
-                menorValor = numero;
-            }
-        }
+    function ordenarNumeros(arrayDeNum: number[]) {
+        arrayDeNum.sort((a, b) => a - b);
+        return arrayDeNum;
     }
 
-    
-    // console.log(inserirArrayDeNumeros());
+    const numerosOrdenados: string = ordenarNumeros(arrayDeNum).join(", ");
+
+    console.log(`Os números ordenados são: ${numerosOrdenados}`);
 }
+
+// OK
